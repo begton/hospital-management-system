@@ -1,0 +1,240 @@
+/* ========== BASE STYLES ========== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f8fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== FORM STYLES ========== */
+.section-patients form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+    width: 280px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    width: 250px;
+}
+
+.search-form .search-btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form .search-btn:hover {
+    background-color: #013a74;
+}
+
+.search-form .search-btn i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* ========== BUTTON STYLES ========== */
+button,
+.cancel-btn,
+.add-btn,
+.edit-btn,
+.Appointment-btn,
+.delete-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+.add-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.add-btn:hover {
+    background-color: #004080;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.Appointment-btn {
+    background-color: #3bd154;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #bb2d3b;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.cancel-btn:hover {
+    background-color: #bbb;
+}
+
+/* ========== SECTION STYLES ========== */
+.section-patients {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 7px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-patients h2 {
+    margin-right: 70%;
+    font-size: 30px;
+    color: #127b8e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ========== TABLE STYLES ========== */
+.section-patients table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-patients th,
+.section-patients td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.section-patients th {
+    
+    background-color: #2a7da2;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.section-patients tr:hover {
+    background-color: #f9f9f9;
+}
+
+.section-patients td a {
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+/* ========== ALERT MESSAGES ========== */
+.success-message,
+.error-message,
+.alert-message {
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.success-message {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 5px solid #198754;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #f5c6cb;
+}
+
+.alert-message {
+    background-color: #e3f7ff;
+    border: 1px solid #b3e0f7;
+    color: #0077b6;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== DROPDOWN STYLES ========== */
+
+
+/* ========== ACTION BUTTONS & SEPARATORS ========== */
+.section-patients .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-patients .action-buttons .separator {
+    color: #ccc;
+    font-weight: bold;
+}
+.section-patients .action-buttons .separator:hover {
+    color: #0d6efd;
+    font-size: 10px;
+}
